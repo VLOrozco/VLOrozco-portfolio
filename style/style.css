@@ -136,6 +136,7 @@ hr {
     line-height: 1.5rem;
   }
 
+/* PORTFOLIO SECTION | TYPOGRAPHY */
 #portfolio-btn {
   border: none;
   background-color: rgb(0, 0, 0);
@@ -151,6 +152,27 @@ hr {
     font-weight: 500;
     text-decoration: none;
     color: rgb(250, 250, 250);
+  }
+
+  .project .title {
+    font-size: 20px;
+  }
+  
+  .project .description {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .project .subtitle {
+    font-size: 18px;
+  }
+  
+  .portfolio-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .portfolio-link:active {
+    color: deeppink;
   }
 
 /* CREDITS & ATTRIBUTION | TYPOGRAPHY */
@@ -261,6 +283,136 @@ hr {
   }
     #portfolio-btn:hover {
       background-color: rgb(255, 20, 147);
+    }
+
+/* PORTFOLIO SECTION | LAYOUT */
+.heading-txt {
+  display: flex;
+  flex-direction: column;
+  width: 43em;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(250, 250, 250);
+  color: #000;
+  line-height: 45px;
+}
+
+hr {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  height: 700px;
+  max-width: 100vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(353px, 1fr));
+  grid-template-rows: repeat(3, minmax(350px, 1fr));
+  margin-bottom: 8rem;
+}
+
+.relative {
+  position: relative;
+}
+  .project {
+    position: absolute;
+  }
+  /* PROJECT BOX TEXT | LAYOUT */
+  .txt {
+    margin: 0.9em 1em 0 0.8em;
+  }
+  .project .title {
+  margin: 0 0 0.2em 0;
+  }
+  .project .description {
+    margin: 0.4em 0 0.2em 0;
+  }
+  .project .subtitle {
+    margin: 0.6em 0 0.2em 0;
+  }
+
+.project * {
+  opacity: 0;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+  .project:hover * {
+    opacity: 1;
+  }
+/* PROJECT BACKGROUND HOVER STATES | LAYOUT */
+.one .project,
+.two .project,
+.three .project,
+.four .project,
+.five .project,
+.six .project {
+  transition: linear 0.2s;
+}
+  .one:hover .project,
+  .two:hover .project,
+  .three:hover .project,
+  .four:hover .project,
+  .five:hover .project,
+  .six:hover .project {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(157, 157, 157, 0.7);
+    mix-blend-mode: normal;
+    display: block;
+  }
+    /* PROJECT BACKGROUND IMAGES | LAYOUT */
+    .one {
+      background-image: url("../images/officelite.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .two {
+      background-image: url("../images/maker.png");
+      background-size: 130%;
+      background-repeat: no-repeat;
+    }
+
+    .three {
+      background-image: url("../images/sunnyside.png");
+      background-size: 101%;
+      background-repeat: no-repeat;
+    }
+
+    .four {
+      background-image: url("../images/altas-palmas.png");
+      background-size: 125%;
+      background-repeat: no-repeat;
+    }
+
+    .five {
+      background-image: url("../images/card-component.png");
+      background-size: 195%;
+      background-position: 50% 20%;
+      background-repeat: no-repeat;
+    }
+
+    .six {
+      background-image: url("../images/3-column-card.png");
+      background-size: 130%;
+      background-position: 40% 20%;
+      background-repeat: no-repeat;
     }
 
 /* CREDITS & ATTRIBUTION | LAYOUT */
