@@ -337,16 +337,17 @@ section {
   align-items: center;
   margin-bottom: 80px;
 }
-
+/* PROJECTS GRID | LAYOUT */
 .wrapper {
   height: 700px;
   max-width: 100vw;
   margin-left: 1rem;
   margin-right: 1rem;
-  /* GRID */
+
   display: grid;
   grid-template-columns: repeat(3, minmax(353px, 1fr));
   grid-template-rows: repeat(3, minmax(350px, 1fr));
+  gap: 1rem;
   margin-bottom: 8rem;
 }
 
@@ -372,10 +373,11 @@ section {
   }
   .source {
     position: absolute;
-    bottom: 0.7rem;
-    left: 1em;
+    bottom: 1rem;
+    left: 0.8em;
   }
-/* PROJECT BACKGROUND | LAYOUT */
+
+/* PROJECT HOVER STATES | LAYOUT */
 .one .project,
 .two .project,
 .three .project,
@@ -384,10 +386,27 @@ section {
 .six .project {
     width: 100%;
     height: 100%;
-    background-color: rgba(157, 157, 157, 0.75);
-    mix-blend-mode: saturate;
+    display: block;
+    transition: linear 0.5s;
+    cursor: crosshair;
+}
+.one .project:hover,
+.two .project:hover,
+.three .project:hover,
+.four .project:hover,
+.five .project:hover,
+.six .project:hover {
+    background-color: rgba(157, 157, 157, 0.7);
+    mix-blend-mode: normal;
     display: block;
 }
+  .project * {
+    opacity: 0;
+    transition: linear 0.2s;
+  }
+  .project:hover * {
+    opacity: 1;
+  }
   /* PROJECT BACKGROUND IMAGES | LAYOUT */
   .one {
     background-image: url("../images/officelite.png");
@@ -425,17 +444,39 @@ section {
 /* GRID BUTTONS | LAYOUT */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: absolute;
   bottom: 1rem;
-  right: 1em;
-  width: 6rem;
+  right: 0.6em;
+  width: 6.7rem;
   height: 1.6rem;
   outline: none;
   cursor: pointer;
 }
   .button {
-    width: 3rem;
+    width: 48%;
+    border: none;
+  }
+  .btn-live, .btn-solution {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  button .btn-txt {
+    font-family: 'Comfortaa', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 0.5rem;
+    font-weight: 700;
+    opacity: 0.85;
+  }
+  /* BUTTON HOVER & ACTIVE STATES */
+  .btn-live:hover,
+  .btn-live:active,
+  .btn-solution:hover,
+  .btn-solution:active {
+    background-color: rgb(255, 20, 147);
+    transition: background-color 0.3s ease-out;
   }
 
 /* CONTACT SECTION | LAYOUT */
