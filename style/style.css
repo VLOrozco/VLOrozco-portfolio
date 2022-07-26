@@ -1,0 +1,224 @@
+/* font-family: 'Comfortaa', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+/* font-family: 'Great Vibes', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/* font-family: 'Urbanist', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ========================================================================= */
+/* TABLE OF CONTENTS */
+/* 
+1. GLOBAL
+2. TYPOGRAPHY
+3. LAYOUT
+4. MEDIA QUERIES
+
+Sections:
+  home
+  about
+  portfolio
+  contact
+*/
+/* ========================================================================= */
+/* 1. GLOBAL */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Urbanist", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex ul {
+  justify-content: space-around;
+  width: 525px;
+  height: 80px;
+}
+
+/* ========================================================================= */
+/* 2. TYPOGRAPHY */
+/* NAVBAR | TYPOGRAPHY */
+#nav ul {
+  list-style: none;
+}
+#nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+  #nav ul li a:hover,
+  #nav ul li a:active {
+    color: rgb(255, 20, 147);
+    border-bottom: 2.5px solid rgb(255, 20, 147);
+  }
+/* HERO | TYPOGRAPHY */
+#hero-txt-bx {
+  background: rgba(21, 24, 24, 0.47);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  color: rgb(211, 206, 206);
+}
+#hero-txt-bx .hero-txt {
+  font-weight: 400;
+  font-size: 1.7rem;
+  opacity: 0.85;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: left;
+  line-height: 2rem;
+}
+
+#hero-txt-bx .hero-txt span {
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: rgb(250, 250, 250);
+  font-weight: 900;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.4);
+}
+#hero-txt-bx .hero-txt #developer {
+  font-family: "Great Vibes", cursive;
+}
+/* CREDITS & ATTRIBUTION | TYPOGRAPHY */
+.photo-credit, #attribution {
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ========================================================================= */
+/* 3. LAYOUT */
+/* NAVBAR | LAYOUT */
+#nav, #header {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+#nav ul li a {
+  padding: 5px;
+  margin: 5px;
+}
+#main {
+  /* border: 1px solid deeppink; */
+  margin-bottom: 8rem;
+}
+
+/* LOGO | LAYOUT */
+#logo {
+  width: 166px;
+}
+
+/* HERO | LAYOUT */
+.hero-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 2;
+
+  max-height: 600px;
+  min-width: 100%;
+  margin: auto;
+  height: clamp(8rem, 80vh, 60rem);
+  width: clamp(5rem, 80vw, 100rem);
+}
+
+.hero-img {
+  position: absolute;
+  max-height: 600px;
+  height: clamp(5rem, 50vh, 60rem);
+  width: clamp(5rem, 80vw, 100rem);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#hero-txt-bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: clamp(5rem, 60vh, 20rem);
+  width: clamp(5rem, 60vw, 100rem);
+}
+#hero-txt-bx .hero-txt {
+  padding: 8px;
+}
+
+/* CREDITS & ATTRIBUTION | LAYOUT */
+.photo-credit {
+  margin-bottom: 80px;
+}
+#attribution {
+  margin-left: 130px;
+}
+
+/* FOOTER | LAYOUT */
+#footer {
+  padding: 15px;
+  background-color: rgba(211, 211, 211, 0.126);
+}
+
+.footer-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profess-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  margin-right: 80px;
+}
+
+/* FOOTER | ICON LINKS | LAYOUT */
+#github, #linkedin, #codecademy, #frontendmentor {
+  width: 30px;
+}
+
+/* ========================================================================= */
+/* 4. MEDIA QUERIES */
+/* @media screen and (max-width: 1290px) {
+  
+} */
