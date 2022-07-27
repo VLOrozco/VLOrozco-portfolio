@@ -886,7 +886,6 @@ section {
     opacity: 0;
   }
 
-
   /* NAV MENU ICON | MQ max-width: 680px  */
   #hero-txt-bx .hero-txt {
     font-size: 0.8rem;
@@ -904,5 +903,39 @@ section {
   #hero-txt-bx .hero-txt #developer {
     font-size: 1rem;
   }
+
+  /* ABOUT | MQ max-width: 680px */
+  .about-box {
+    max-height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+  #portrait {
+    max-width: 4rem;
+  }
+  .about-me {
+    max-width: 75%;
+    height: 100%;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  .about-txt {
+    max-width: 100%;
+    margin: 0;
+  }
+  .about-me h1,
+  #projects .title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+    .about-txt, 
+    #projects .description {
+      font-size: 0.7rem;
+      letter-spacing: 0;
+      line-height: 1rem;
+      margin: 0.5rem;
+    }
+    
   
 }
