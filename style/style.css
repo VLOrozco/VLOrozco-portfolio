@@ -587,6 +587,8 @@ section {
 
 /* ========================================================================= */
 /* 4. MEDIA QUERIES */
+
+/* MEDIA QUERY | max-width: 1190px */
 @media screen and (max-width: 1190px) {
   /* LOGO | MQ max-width: 1190px */
   #logo {
