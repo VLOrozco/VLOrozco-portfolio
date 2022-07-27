@@ -148,29 +148,29 @@ hr {
     opacity: 0.85;
   }
 /* PROJECT GRID CELL TEXT | TYPOGRAPHY */
-  .project .project-main .title {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1rem;
-  }
-  
-  .project .project-main .description {
-    font-size: 0.81rem;
-    font-weight: 600;
-    line-height: 1rem;
-  }
-  
-  .project .source .subtitle {
-    font-size: 0.8rem;
-  }
-  
-  .portfolio-link {
-    color: rgb(0, 0, 0);
-  }
-  
-  .portfolio-link:active {
-    color: rgb(255, 20, 147);
-  }
+.project .project-main .title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.project .project-main .description {
+  font-size: 0.81rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.project .source .subtitle {
+  font-size: 0.8rem;
+}
+
+.portfolio-link {
+  color: rgb(0, 0, 0);
+}
+
+.portfolio-link:active {
+  color: rgb(255, 20, 147);
+}
 
 /* CONTACT SECTION | TYPOGRAPHY */
 .container form hr {
@@ -831,7 +831,7 @@ section {
     height: auto;
     margin-top: 2rem;
     grid-template-columns: repeat(1, minmax(353px, 1fr));
-  grid-template-rows: repeat(6, minmax(350px, 1fr));
+    grid-template-rows: repeat(6, minmax(350px, 1fr));
     gap: 1rem;
   }
 }
@@ -889,7 +889,7 @@ section {
     opacity: 1;
   }
 
-  /* NAV MENU ICON | MQ max-width: 680px  */
+  /* HERO TEXT | MQ max-width: 680px  */
   #hero-txt-bx .hero-txt {
     font-size: 0.8rem;
     color: white;
@@ -1033,5 +1033,98 @@ section {
   .form-credit {
     margin-top: 1.5rem;
   }
-  
+}
+
+
+/* ========================== */
+/* MEDIA QUERY | max-width: 400px */
+@media screen and (max-width: 400px) {
+  /* HEADER | MQ max-width: 400px */
+  #header {
+    height: 4vh;
+  }
+  /* LOGO | MQ max-width: 400px */
+  #logo {
+    width: 3.2rem;
+    margin-left: 0.8rem;
+  }
+  /* HERO | MQ max-width: 400px */
+  #main {
+    margin-top: 0;
+  }
+  /* NAV MENU ICON & BOX | MQ max-width: 400px  */
+  #menuIcon {
+    height: 1.2rem;
+    width: 1.2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+  }
+  /* HERO TEXT | MQ max-width: 400px  */
+  #hero-txt-bx .hero-txt {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-size: 0.7rem;
+  }
+  #hero-txt-bx .hero-txt #developer {
+    font-size: 0.8rem;
+  }
+
+  /* PROJECTS GRID | MQ max-width: 400px  */
+  .wrapper {
+    margin-top: 0.6rem;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-template-rows: repeat(6, minmax(300px, 1fr));
+    gap: 0.5rem;
+  }
+  /* PROJECT MAIN TEXT | MQ max-width: 400px  */
+  .project-main {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    width: 70%;
+  }
+  .project .project-main .title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 0.9rem;
+  }
+  .project .project-main .description {
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 0.8rem;
+  }
+  /* PROJECT SOURCE | MQ max-width: 400px  */
+  .source {
+    height: 50%;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .project .source .subtitle {
+    width: 52px;
+    font-size: 0.65rem;
+    text-align: center;
+  }
+  .source-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* PROJECT BUTTONS | MQ max-width: 400px  */
+  .buttons {
+    width: 150px;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 72px;
+  }
+
+  /* FOOTER ICON LINKS | MQ max-width: 400px */
+  #github, #linkedin, #codecademy, #frontendmentor {
+    margin: 0.4rem;
+    margin-top: 0;
+  }
 }
