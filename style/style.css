@@ -1006,5 +1006,32 @@ section {
   /* FOOTER ICON LINKS | MQ max-width: 640px */
   #github, #linkedin, #codecademy, #frontendmentor {
     margin: 0.3rem;
+  }
 }
+
+
+/* ========================== */
+/* MEDIA QUERY | max-width: 500px */
+@media screen and (max-width: 500px) {
+  /* ABOUT SECTION | MQ max-width: 500px  */
+  .about-me {
+    width: 100vw;
+    margin: 0;
+  }
+  .about-txt {
+    width: 100%;
+    min-width: 250px;
+    margin: 0;
+  }
+  /* CONTACT FORM | MQ max-width: 500px  */
+  .container form input, 
+  .container form textarea {
+    font-size: 0.6rem;
+  }
+
+  /* FORM CREDIT | MQ max-width: 500px  */
+  .form-credit {
+    margin-top: 1.5rem;
+  }
+  
 }
