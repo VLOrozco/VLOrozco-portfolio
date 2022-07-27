@@ -134,8 +134,13 @@ hr {
 
 /* PORTFOLIO SECTION | TYPOGRAPHY */
 .github-link {
-  color: rgb(255, 20, 147);
+  font-weight: 600;
+  color: rgb(0, 0, 255);
+  cursor: pointer;
 }
+  .github-link:hover {
+    color: rgb(255, 20, 147);
+  }
 #portfolio-btn {
   border: none;
   background-color: rgb(0, 0, 0);
