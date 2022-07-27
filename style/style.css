@@ -888,6 +888,21 @@ section {
 
 
   /* NAV MENU ICON | MQ max-width: 680px  */
-
+  #hero-txt-bx .hero-txt {
+    font-size: 0.8rem;
+    color: white;
+    line-height: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-size: 0.9rem;
+  }
+  #hero-txt-bx .hero-txt #developer {
+    font-size: 1rem;
+  }
   
 }
