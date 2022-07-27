@@ -969,3 +969,39 @@ section {
     display: block;
   }
 }
+
+
+/* ========================== */
+/* MEDIA QUERY | max-width: 640px */
+@media screen and (max-width: 640px) {
+  /* CONTACT FORM | MQ max-width: 640px  */
+  .container form input, 
+  .container form textarea {
+    width: 60vw;
+  }
+
+  /* FOOTER | MQ max-width: 640px  */
+  .footer-txt {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .attribution,
+  .profess-links {
+    margin: 0;
+    padding: 0;
+  }
+  #attribution {
+    width: 100vw;
+    margin: 0;
+  }
+  .profess-links {
+    width: 50vw;
+    padding: 0.2rem;
+  }
+  /* FOOTER ICON LINKS | MQ max-width: 640px */
+  #github, #linkedin, #codecademy, #frontendmentor {
+    margin: 0.3rem;
+}
+}
