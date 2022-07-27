@@ -672,7 +672,7 @@ section {
     height: auto;
     margin-top: -2rem;
     grid-template-columns: repeat(2, minmax(353px, 1fr));
-  grid-template-rows: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: repeat(3, minmax(350px, 1fr));
     gap: 1.3rem;
   }
 
@@ -936,6 +936,36 @@ section {
       line-height: 1rem;
       margin: 0.5rem;
     }
-    
+
+  /* PORTFOLIO/PROJECTS SECTION | MQ max-width: 680px */
+  #projects .title {
+    margin-bottom: 0.5rem;
+  }
+  #projects .description {
+    margin-top: 0;
+  }
+  section {
+    margin-bottom: 30px;
+  }
   
+  /* PROJECTS GRID | MQ max-width: 680px */
+  .wrapper {
+    height: auto;
+    margin-top: 1rem;
+    gap: 0.8rem;
+    margin-bottom: 6rem;
+  }
+  .project * {
+    opacity: 1;
+  }
+  .one .project,
+  .two .project,
+  .three .project,
+  .four .project,
+  .five .project,
+  .six .project {
+    background-color: rgba(157, 157, 157, 0.7);
+    mix-blend-mode: normal;
+    display: block;
+  }
 }
