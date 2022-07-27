@@ -693,6 +693,7 @@ section {
   }
 }
 
+/* ========================== */
 /* MEDIA QUERY | max-width: 1015px */
 @media screen and (max-width: 1015px) {
   html {
@@ -704,7 +705,7 @@ section {
   }
   /* NAV | MQ max-width: 1015px  */
   #header {
-    width: 10%;
+    width: 100%;
     margin: 0;
   }
     #logo {
@@ -770,5 +771,67 @@ section {
   .photo-credit {
     margin-top: 12px;
     margin-bottom: 60px;
+  }
+}
+
+
+/* ========================== */
+/* MEDIA QUERY | max-width: 914px */
+@media screen and (max-width: 914px) {
+  /* HERO TEXT BOX | MQ max-width: 914px  */
+  #hero-txt-bx {
+    width: 70vw;
+  }
+  #hero-txt-bx .hero-txt {
+    width: 75%;
+    line-height: 1.8rem;
+    opacity: 1;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-size: 1.1rem;
+    text-shadow: none;
+  }
+
+  /* ABOUT SECTION| MQ max-width: 914px  */
+  .about-box {
+    max-height: 1000px;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #about, #portrait, #projects {
+    margin: 0;
+  }
+
+  /* PORTFOLIO SECTION| MQ max-width: 914px  */
+  section {
+    margin-bottom: 0;
+  }
+  #projects {
+    width: 100%;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: 8rem;
+  }
+  #projects .title,
+  #projects .description {
+    margin: 0;
+  }
+  #projects .title {
+    margin-bottom: 0.9rem;
+  }
+  #projects .description {
+    margin-top: 0.6rem;
+  }
+  #projects hr {
+    width: 67%;
+  }
+
+  /* PROJECTS GRID | MQ max-width: 1190px */
+  .wrapper {
+    height: auto;
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, minmax(353px, 1fr));
+  grid-template-rows: repeat(6, minmax(350px, 1fr));
+    gap: 1rem;
   }
 }
