@@ -867,7 +867,7 @@ section {
 @media screen and (max-width: 680px) {
   /* NAV MENU ICON & BOX | MQ max-width: 680px  */
   #menuIcon {
-    background-image: url('../images/bars-solid.svg');
+    background-image: url("../images/bars-solid.svg");
     background-repeat: no-repeat;
     height: 1.6rem;
     width: 1.6rem;
