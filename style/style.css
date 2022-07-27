@@ -103,10 +103,9 @@ a, a:visited, a:active {
 
 #hero-txt-bx .hero-txt span {
   font-family: "Comfortaa", cursive;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.9rem;
   color: rgb(250, 250, 250);
-  font-weight: 900;
   text-shadow: 2px 2px rgba(255, 255, 255, 0.4);
 }
 #hero-txt-bx .hero-txt #developer {
@@ -120,20 +119,17 @@ hr {
 .about-me h1 {
   font-family: "Comfortaa", cursive;
   font-weight: 700;
-  font-size: 40px;
-  color: rgb(250, 250, 250);
-  color: #000;
+  font-size: 1.8rem;
   line-height: 45px;
+  color: #000;
 }
   .about-txt {
     font-weight: 400;
-    font-size: 34px;
-    opacity: 0.85;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    font-size: 21px;
-    word-spacing: 1px;
+    font-size: 1rem;
     line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    opacity: 0.85;
   }
 
 /* PORTFOLIO SECTION | TYPOGRAPHY */
@@ -143,17 +139,15 @@ hr {
   cursor: pointer;
 }
   #portfolio-btn a {
-    font-weight: 400;
-    font-size: 34px;
-    opacity: 0.85;
-    letter-spacing: 1px;
-    word-spacing: 2px;
     font-size: 0.65rem;
     font-weight: 500;
-    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     color: rgb(250, 250, 250);
+    text-decoration: none;
+    opacity: 0.85;
   }
-
+/* PROJECT GRID CELL TEXT | TYPOGRAPHY */
   .project .project-main .title {
     font-size: 1rem;
     font-weight: 700;
@@ -175,7 +169,7 @@ hr {
   }
   
   .portfolio-link:active {
-    color: deeppink;
+    color: rgb(255, 20, 147);
   }
 
 /* CONTACT SECTION | TYPOGRAPHY */
@@ -410,8 +404,9 @@ section {
   /* PROJECT BACKGROUND IMAGES | LAYOUT */
   .one {
     background-image: url("../images/officelite.png");
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
+    border: 1.5px solid silver;
   }
   .two {
     background-image: url("../images/maker.png");
@@ -592,6 +587,105 @@ section {
 
 /* ========================================================================= */
 /* 4. MEDIA QUERIES */
-/* @media screen and (max-width: 1290px) {
-  
-} */
+@media screen and (max-width: 1190px) {
+  /* LOGO | MQ max-width: 1190px */
+  #logo {
+    width: 5rem;
+  }
+  /* NAV | MQ max-width: 1190px */
+  #nav, #header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #header {
+    margin-left: 2.8rem;
+  }
+  #nav ul li a {
+    font-size: 1rem;
+  }
+  /* MAIN | MQ max-width: 1190px */
+  #main {
+    margin-bottom: 6rem;
+  }
+  /* HERO | MQ max-width: 1190px */
+  #hero-txt-bx .hero-txt {
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-weight: 800;
+    font-size: 1.7rem;
+    text-shadow: 1.5px 1.5px rgba(255, 255, 255, 0.4);
+  }
+  /* ABOUT | MQ max-width: 1190px */
+  .about-box {
+    margin-bottom: 6rem;
+  }
+  .about-me {
+    width: 30rem;
+  }
+  .about-me h1,
+  #projects .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+    .about-txt, 
+    #projects .description {
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+      line-height: 1.5rem;
+      margin: 2.5rem;
+    }
+  /* PHOTO | MQ max-width: 1190px */
+  #portrait {
+    max-width: 10rem;
+    margin-top: 1.6rem;
+  }
+  /* "go to portfolio" BUTTON | MQ max-width: 1190px */
+  #portfolio-btn a {
+    word-spacing: 0;
+    font-size: 0.65rem;
+    font-weight: 400;
+  }
+    #portfolio-btn:active {
+      background-color: rgb(255, 20, 147);
+    }
+  /* PORTFOLIO/PROJECTS SECTION | MQ max-width: 1190px */
+  #projects .title {
+    margin-bottom: 1rem;
+  }
+  #projects .description {
+    margin-top: 0.5rem;
+  }
+  #projects hr {
+    width: 80%;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  /* PROJECTS GRID | MQ max-width: 1190px */
+  .wrapper {
+    height: auto;
+    margin-top: -2rem;
+    grid-template-columns: repeat(2, minmax(353px, 1fr));
+  grid-template-rows: repeat(3, minmax(350px, 1fr));
+    gap: 1.3rem;
+  }
+
+  /* CONTACT SECTION | MQ max-width: 1190px  */
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  /* FOOTER - ATTRIBUTION - PROFESS-LINKS | MQ max-width: 1190px */
+  #footer {
+    padding: 15px 0;
+  }
+  #attribution {
+    margin-left: 4rem;
+  }
+  .profess-links {
+    margin-right: 4rem;
+  }
+}
