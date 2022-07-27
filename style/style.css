@@ -661,7 +661,8 @@ section {
     margin-top: 0.5rem;
   }
   #projects hr {
-    width: 80%;
+    width: 72%;
+    margin: 0;
   }
   section {
     margin-bottom: 60px;
@@ -689,5 +690,94 @@ section {
   }
   .profess-links {
     margin-right: 4rem;
+  }
+}
+
+/* MEDIA QUERY | max-width: 1015px */
+@media screen and (max-width: 1015px) {
+  html {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  /* NAV | MQ max-width: 1015px  */
+  #header {
+    width: 10%;
+    margin: 0;
+  }
+    #logo {
+      margin-left: 2rem;
+    }
+
+    #nav {
+      width: 40vw;
+      min-width: 291px; 
+      position: absolute;
+      right: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+      #navbar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  /* HERO | MQ max-width: 1015px */
+  #main {
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+  }
+  .hero-box {
+    height: 30vh;
+    margin-top: 3%;
+    margin-bottom: 0;
+  }
+  /* HERO IMAGE| MQ max-width: 1015px */
+  .hero-img {
+    max-height: 30vh;
+  }
+  /* HERO TEXT BOX | MQ max-width: 1015px */
+  #hero-txt-bx {
+    height: 23vh;
+  }
+  #hero-txt-bx .hero-txt {
+    width: 80%;
+    height: 75%;
+  }
+  #hero-txt-bx .hero-txt {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+  }
+  #hero-txt-bx .hero-txt {
+    font-weight: 400;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    line-height: 1.8rem;
+  }
+  #hero-txt-bx .hero-txt span {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(250, 250, 250);
+    text-shadow: 0.3px 0.3px rgba(255, 255, 255, 0.4);
+  }
+
+  /* PORTFOLIO | MQ max-width: 1015px */
+  .heading-txt {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* CREDITS | MQ max-width: 1015px */
+  .photo-credit {
+    margin-top: 12px;
+    margin-bottom: 60px;
   }
 }
