@@ -882,8 +882,11 @@ section {
     font-size: 1rem;
     z-index: 102;
   }
-  #nav {
+  .nav.active {
     opacity: 0;
+  }
+  .nav {
+    opacity: 1;
   }
 
   /* NAV MENU ICON | MQ max-width: 680px  */
