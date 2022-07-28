@@ -468,6 +468,9 @@ section {
   }
 
 /* CONTACT SECTION | LAYOUT */
+label {
+  display: none;
+}
 .container {
   position: relative;
   margin: 0;
