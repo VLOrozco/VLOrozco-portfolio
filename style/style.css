@@ -388,26 +388,12 @@ section {
     width: 100%;
     height: 100%;
     display: block;
+    background-color: rgba(157, 157, 157, 0.7);
+    mix-blend-mode: normal;
     transition: linear 0.5s;
     cursor: crosshair;
 }
-.one .project:hover,
-.two .project:hover,
-.three .project:hover,
-.four .project:hover,
-.five .project:hover,
-.six .project:hover {
-    background-color: rgba(157, 157, 157, 0.7);
-    mix-blend-mode: normal;
-    display: block;
-}
-  .project * {
-    opacity: 0;
-    transition: linear 0.2s;
-  }
-  .project:hover * {
-    opacity: 1;
-  }
+
   /* PROJECT BACKGROUND IMAGES | LAYOUT */
   .one {
     background-image: url("../images/officelite.png");
@@ -848,25 +834,6 @@ section {
   /* CREDITS | MQ max-width: 914px */
   .header-credit {
     margin-top: -1.2rem;
-  }
-}
-
-/* ========================== */
-/* MEDIA QUERY | max-width: 768px */
-@media screen and (max-width: 768px) {
-  /* PROJECTS GRID | MQ max-width: 768px */
-  .project * {
-    opacity: 1;
-  }
-  .one .project,
-  .two .project,
-  .three .project,
-  .four .project,
-  .five .project,
-  .six .project {
-    background-color: rgba(157, 157, 157, 0.7);
-    mix-blend-mode: normal;
-    display: block;
   }
 }
 
