@@ -7,6 +7,7 @@
   <title>VLOrozco</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon-logo.png">
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <script src="main.js" defer></script>
 </head>
 <body>
@@ -14,11 +15,13 @@
 <!-- HEADER -->
 <header id="header" class="flex">
   <!-- LOGO -->
-  <img id="logo" src="./images/Logo-Modern-Black-Monogram-Initial.png" alt="VO logo with text Veronica Orozco">
+  <div data-aos="fade-right">
+    <img id="logo" src="./images/Logo-Modern-Black-Monogram-Initial.png" alt="VO logo with text Veronica Orozco">
+  </div>
   
   <!-- NAVIGATION -->
   <div id="menuIcon"></div>
-  <nav id="nav" class="flex nav active">
+  <nav id="nav" class="flex nav active" data-aos="fade-left">
     <ul id="navbar" class="flex">
       <li><a href="#about">about</a></li>
       <li><a href="#projects">portfolio</a></li>
@@ -29,7 +32,7 @@
 
 <!-- HERO BANNER -->
 <main id="main">
-  <div class="hero-box">
+  <div class="hero-box" data-aos="flip-right">
     <img src="./images/linus-mimietz-gvptKmonylk-unsplash.jpg" alt="desktop photo with colorful lights in background" class="hero-img">
     <div id="hero-txt-bx">
       <h2 class="hero-txt">
@@ -51,7 +54,7 @@
 </main>
 
 <!-- ABOUT SECTION -->
-<section id="about" class="about-box">
+<section id="about" class="about-box" data-aos="flip-down">
   <img src="./images/vlorozco_portrait.jpg" alt="Professional image of Veronica" id="portrait">
   <div class="about-me">
     <div class="about-txt">
@@ -67,7 +70,7 @@
 </section>
 
 <!-- PORTFOLIO SECTION -->
-<section id="projects" class="heading-txt">
+<section id="projects" class="heading-txt" data-aos="flip-down">
   <h1 class="title">
     projects
   </h1>
@@ -85,7 +88,7 @@
 </section>
 
 <!-- PROJECTS GRID -->
-<section id="project-grid">
+<section id="project-grid" data-aos="zoom-in">
   <div class="wrapper">
     <!-- PROJECT ONE -->
     <div class="one relative">
@@ -268,7 +271,7 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="container">
+<section id="contact" class="container" data-aos="flip-right">
   <img id=contact-img src="./images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg" alt="" width="1000px">
   <!-- FORM -->
   <form class="contact_form" action="https://formsubmit.co/b9215fd0b2cdfdf0fe789ebbeb2b01ad" method="POST" onsubmit="sendEmail(); reset(); return false;">
@@ -288,6 +291,7 @@
     <input id="submit" type="submit" value="submit">
   </form>
 </section>
+
 <!-- PHOTO CREDIT -->
 <div class="photo-credit form-credit">
   Photo by <a href="https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sincerely Media</a> on <a href="https://unsplash.com/collections/Y0aS-JxJos8/portfolio-website-ideas/26e2ea8655431da56fc45ee0ead806ad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -310,6 +314,15 @@
     </div>
   </div>
 </footer>
+
+<!-- ANIMATE ON SCROLL (AOS) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+  </script>
 
 </body>
 </html>
