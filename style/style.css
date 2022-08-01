@@ -78,6 +78,7 @@ a, a:visited, a:active {
   font-weight: 600;
   font-size: 1.3rem;
   cursor: pointer;
+  transition-duration: 300ms;
 }
   #nav ul li a:hover,
   #nav ul li a:active {
@@ -390,7 +391,7 @@ section {
     display: block;
     background-color: rgba(157, 157, 157, 0.7);
     mix-blend-mode: normal;
-    transition: linear 0.5s;
+    transition: linear 500ms;
     cursor: crosshair;
 }
 
